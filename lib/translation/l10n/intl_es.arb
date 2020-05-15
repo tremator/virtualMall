@@ -1,0 +1,77 @@
+{
+  "@@last_modified": "2020-03-02T15:57:40.304609",
+  "quotationTitle": "Cotización",
+  "@quotationTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "call": "Llamar",
+  "@call": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "all": "Todos",
+  "@all": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notProducts": "No hemos encontrado productos.",
+  "@notProducts": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "characteristics": "Características",
+  "@characteristics": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "foods": "Comidas: ",
+  "@foods": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "foodTypes": "Tipos de comida: ",
+  "@foodTypes": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "photo": "Foto",
+  "@photo": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "associatedBusiness": "Negocios Asociados",
+  "@associatedBusiness": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "signIn": "Entrar",
+  "@signIn": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "typeMessage": "Escriba su mensaje...",
+  "@typeMessage": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "showProducts": "Ver Productos",
+  "@showProducts": {
+    "type": "text"
+  },
+  "details": "Detalles",
+  "@details": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "welcome": "Bienvenido",
+  "@welcome": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createLegend": "Crea una cuenta para realizar compras express y mucho más",
+  "@createLegend": {
+    "type": "text",
+    "placeholders": {}
+  }
+}

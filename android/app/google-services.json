@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "652592799872",
+    "firebase_url": "https://virtual-mall.firebaseio.com",
+    "project_id": "virtual-mall",
+    "storage_bucket": "virtual-mall.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652592799872:android:5502cb3e75e539c8c38665",
+        "android_client_info": {
+          "package_name": "com.mistcore.virtual_mall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "652592799872-bq4dbg5ie76p6pdmkpu0jknvuctk6ise.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mistcore.virtual_mall",
+            "certificate_hash": "e1faff320179021961aeba053bb5ffc8732002c2"
+          }
+        },
+        {
+          "client_id": "652592799872-ehqfr06beqnvg5ajj3t4qaiesedljnjl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIT7zxwmp1FonyqhvAIdOV2ILHHa_dkl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "652592799872-ehqfr06beqnvg5ajj3t4qaiesedljnjl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,78 @@
+{
+  "@@last_modified": "2020-03-02T15:57:40.304609",
+  "quotationTitle": "Quotation",
+  "@quotationTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "call": "Call",
+  "@call": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "all": "All",
+  "@all": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "notProducts": "No Products Here",
+  "@notProducts": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "characteristics": "Characteristics",
+  "@characteristics": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "foods": "Foods: ",
+  "@foods": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "foodTypes": "Foods Types: ",
+  "@foodTypes": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "photo": "Photo",
+  "@photo": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "associatedBusiness": "Associated Business",
+  "@associatedBusiness": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "signIn": "SignIn",
+  "@signIn": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "typeMessage": "Type your message...",
+  "@typeMessage": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "showProducts": "Show Products",
+  "@showProducts": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "details": "Details",
+  "@details": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "welcome": "Welcome",
+  "@welcome": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createLegend": "Create an account to make express purchases and much more",
+  "@createLegend": {
+    "type": "text",
+    "placeholders": {}
+  }
+}
