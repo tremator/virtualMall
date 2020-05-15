@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:virtual_mall/core/models/business.dart';
 import 'package:virtual_mall/core/models/bussiness_product_products.dart';
 import 'package:virtual_mall/core/models/buy_car.dart';
 import 'package:virtual_mall/core/services/buyCar/base_buy_car.dart';
@@ -16,12 +17,14 @@ class AppFirebaseBuyCar extends BaseCart {
   BuyCar _cart = BuyCar.initial();
   StreamController<BuyCar> cartController = new StreamController();
   StreamController<List<BusinessProductProducts>> productInCartController = new StreamController();
-  Stream<BuyCar> getCart(String userId) {
+  
+  
+  Stream<BuyCar> getCart(String userId, Business business) {
     cartController.close();
     cartController = StreamController<BuyCar>.broadcast();
     streamSub?.cancel();
     streamSub = _fireStore
-        .collection('user-carts/$userId/products/')
+        .collection('user-carts/$userId/products/').where('id_business', isEqualTo: business.id )
         .snapshots()
         .listen((onData) {
       List<BusinessProductProducts> newList = List();
@@ -54,7 +57,7 @@ class AppFirebaseBuyCar extends BaseCart {
       return false;
     });
   }
-  Stream<List<BusinessProductProducts>> getProductsInCart(String idCart) {
+  Stream<List<BusinessProductProducts>> getAllProductsInCart(String idCart, Business business) {
     streamSub?.cancel();
     productInCartController?.add([]);
     productInCartController = new StreamController();

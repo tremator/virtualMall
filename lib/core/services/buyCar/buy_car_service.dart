@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:rxdart/rxdart.dart';
+import 'package:virtual_mall/core/models/business.dart';
 import 'package:virtual_mall/core/models/bussiness_product_products.dart';
 import 'package:virtual_mall/core/models/buy_car.dart';
 
@@ -15,19 +16,19 @@ class BuyCarService {
   set api(AppFirebaseBuyCar value) {
     _api = value;
   }
-  loadCart(String userId, {bool force = false}) async {
+  loadCart(String userId, Business business, {bool force = false}) async {
     if (userId != _lastUserId || force) {
       _lastUserId = userId;
       streamSubscription?.cancel();
-      streamSubscription = _api.getCart(userId).listen((onData) => cartController.add(onData));
+      streamSubscription = _api.getCart(userId,business).listen((onData) => cartController.add(onData));
     }
   }
   Stream<BuyCar> get cart => cartController.stream;
   Future<bool> insertProductInCart(BusinessProductProducts product, String userId) async {
     return _api.insertProductInCart(product, userId);
   }
-  Stream<List<BusinessProductProducts>> getProductsInCart(String idCart) {
-    return _api.getProductsInCart(idCart);
+  Stream<List<BusinessProductProducts>> getProductsInCart(String idCart, Business business) {
+    return _api.getAllProductsInCart(idCart, business);
   }
   Future<bool> deleteProductInCart(String product, String idCart) {
     return _api.deleteProductInCart(product, idCart);

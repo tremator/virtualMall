@@ -4,6 +4,7 @@
 
 import 'dart:async';
 
+import 'package:virtual_mall/core/models/business.dart';
 import 'package:virtual_mall/core/models/bussiness_product_products.dart';
 import 'package:virtual_mall/core/models/buy_car.dart';
 import 'package:virtual_mall/core/models/user.dart';
@@ -13,9 +14,12 @@ import 'package:virtual_mall/core/viewmodels/base_model.dart';
 class BuyCarModel extends BaseModel{
   BuyCarService _service;
   User _user;
+  Business _business = Business.initial();
   BuyCar _car = BuyCar.initial();
 
   User get user => _user;
+
+
 
   set user(User user){
     _user = user;
@@ -26,6 +30,8 @@ class BuyCarModel extends BaseModel{
   
   BuyCarService get service => _service;
 
+
+
   set service(BuyCarService service){
     _service = service;
     notifyListeners();
@@ -35,6 +41,13 @@ class BuyCarModel extends BaseModel{
 
   set car (BuyCar car){
     _car = car;
+    notifyListeners();
+  }
+
+  Business get business => this._business; 
+
+  set business(Business business){
+    this._business = business;
     notifyListeners();
   }
 
@@ -98,13 +111,13 @@ class BuyCarModel extends BaseModel{
     
   }
   void getCartProducts(){
-    service.getProductsInCart(car.id).listen((data){
+    service.getProductsInCart(car.id,business).listen((data){
       car.products.clear();
       car.products.addAll(data);
     });
   }
   void getUserCart(){
-    service.loadCart(user.id);
+    service.loadCart(user.id,business);
     service.cartController.stream.listen((data){
       car = data;
     });

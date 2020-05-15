@@ -41,6 +41,7 @@ dependencies:
   flutter_image_compress: ^0.6.5+1
   path_provider:
   photo_view:
+  google_maps_flutter: ^0.5.25+1
 
 dev_dependencies:
   flutter_test:
